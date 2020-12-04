@@ -1,0 +1,12 @@
+import csv
+
+a = [['202001010000','add','main road','car','1'],['202001010001','add','main road','car','2'],
+     ['202001010001','add','main road','car','3'],['202001010002','add','main road','car','4'],
+     ['202001010005','add','main road','car','4'],['202001010002','undo','main road','car','4'],
+     ['202001010002','add','ring road','truck','4'],['202001010002','add','ring road','truck','4'],
+     ['202001010002','add','ring road','truck','4'],['202001010002','undo','ring road','truck','4'],
+     ['202001010002','add','behind the bus stop','bicycle','4']]
+
+with open("test1.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(a)
